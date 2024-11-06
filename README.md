@@ -11,11 +11,21 @@ You can use the presets in this repository by adding them to your `renovate.json
 ```json
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["nuhs-projects/renovate-config:exceptMajor"],
+  "extends": ["nuhs-projects/renovate-config:exceptMajor"]
 }
 ```
 
 See all settings [here][renovate-settings].
+
+It's also suggested you add the following pre-commit check, to make sure your Renovate configuration follows the schema:
+
+```yml
+repos:
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.29.4
+    hooks:
+      - id: check-renovate
+```
 
 [presets]: https://docs.renovatebot.com/key-concepts/presets/
 [Renovate]: https://docs.renovatebot.com/
