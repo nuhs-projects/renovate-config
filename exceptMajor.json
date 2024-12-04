@@ -3,12 +3,23 @@
   "extends": ["config:best-practices", "schedule:earlyMondays"],
   "packageRules": [
     {
-      "groupName": "all non-major dependencies",
+      "groupName": "all non-major updates",
       "groupSlug": "all-minor-patch",
       "matchPackageNames": ["*"],
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "lockFileMaintenance",
+        "pin",
+        "pinDigest",
+        "digest"
+      ],
       "automerge": true
     }
   ],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "automergeType": "pr",
   "timezone": "Asia/Singapore"
 }
