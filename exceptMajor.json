@@ -15,6 +15,11 @@
         "digest"
       ],
       "automerge": true
+    },
+    {
+      "matchPackageNames": ["python"],
+      "groupName": "python",
+      "automerge": false
     }
   ],
   "lockFileMaintenance": {
