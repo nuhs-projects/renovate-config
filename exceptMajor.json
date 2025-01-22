@@ -26,6 +26,6 @@
     "enabled": true,
     "automerge": true
   },
-  "automergeType": "pr",
+  "automergeType": "branch",
   "timezone": "Asia/Singapore"
 }
