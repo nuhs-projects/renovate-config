@@ -3,5 +3,6 @@
   "extends": ["config:best-practices", "schedule:earlyMondays", "group:all"],
   "automerge": true,
   "lockFileMaintenance": { "enabled": true },
-  "timezone": "Asia/Singapore"
+  "timezone": "Asia/Singapore",
+  "automergeType": "branch"
 }
