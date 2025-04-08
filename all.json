@@ -1,8 +1,9 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices", "schedule:earlyMondays", "group:all"],
-  "automerge": true,
-  "lockFileMaintenance": { "enabled": true },
-  "timezone": "Asia/Singapore",
-  "automergeType": "branch"
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["config:best-practices", "schedule:earlyMondays", "group:all"],
+	"automerge": true,
+	"lockFileMaintenance": { "enabled": true },
+	"timezone": "Asia/Singapore",
+	"automergeType": "branch",
+	"updateNotScheduled": false
 }
